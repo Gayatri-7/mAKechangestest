@@ -1,0 +1,59 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	int a=10,b=20;
+	int temp=0;
+	
+	
+ //	1.using third variable(tab & abt)
+// temp=a;
+// a=b;
+// b=temp;
+
+ //2.using + & -
+// a = a+b;    a=30
+// b=a-b;      b=30-20=10
+// a=a-b;      a=30-10=20
+
+//3.using * & /
+// a=a*b;      a=20*10=200;
+// b=a/b;      b=200/20=10;
+// a=a/b;      a=200/10=20;
+
+//4.using XOR 
+// a=a^b;    a=  01010  (binary of 10) XOR 10100  (binary of 20)  a=11110 ( binary of 30)
+// b=a^b;    b=  11110 XOR 10100...   b=01010(binary of 10)
+// a=a^b;    a=  11110 XOR 01010...       a=10100 (binary of 20)
+
+//5.single expression
+// b=a+b-(a=b);          a=b ,a=20, -->b=30-20=10;
+
+
+System.out.print(" swapped numbers: "+ a +"& "+b);
+	
+
+	}
+}
+
+
+
+
+
+
+
+//NOTES****
+
+// XOR thing works as:
+// a=(a^b)
+// b=a^b==>(a^b)^b==>a(since b^b cancels out)
+// a=a^b=>(a^b)^a==>b(since x^x cancels out)
+*****
+// 🔢 10 in Binary
+// 10 ÷ 2 = 5, remainder 0
+
+// 5 ÷ 2 = 2, remainder 1
+
+// 2 ÷ 2 = 1, remainder 0
+
+// 1 ÷ 2 = 0, remainder 1

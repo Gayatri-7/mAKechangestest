@@ -1,0 +1,48 @@
+//Prime number 
+public class Main{
+    public static void main(String[] args){
+        int a=43;
+        int count=0;
+        if(a<=1){
+            System.out.print("non prime");
+            return;
+        }
+        if(a==2){
+            System.out.print("2 is prime number");
+              return;
+        }
+        if(a%2==0){
+            System.out.print("every even number (except 2) is NOT A prime number");
+              return;
+        }
+        
+        for(int i=3;i*i<=a;i+=2){
+            if(a%i==0){
+                System.out.print("It is Non-Prime");
+                return;   //if you put break instead of return the function will always print 
+                          //the last sentence but since return stops the complete function that's why return is used and not break 
+            } 
+            
+            
+        }
+        System.out.print("it is prime");
+    }
+}
+
+
+
+
+//u can also use a flag
+// boolean isprime=true;
+// for(int i=3;i*i<=a;i++){
+//     if(a%i==0){
+//         isprime=false;
+//         break;
+//     }
+// }
+// if(isprime){
+//     System.out.print("Prime");
+// }
+// else{
+//      System.out.print("not prime");
+// }
