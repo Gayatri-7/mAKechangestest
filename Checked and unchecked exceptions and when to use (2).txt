@@ -1,0 +1,26 @@
+checked exception
+compile time exeption
+happens before runtime exceptions
+it is caught by the compiler javac
+They must be handled with catch try and throws or the program wont compile only
+Eg.IOException, SQLException, FileNotFoundException
+Extends 'Exception' class
+Use Case 🎯	When the program must handle the exception (e.g., file operations, network issues).
+
+
+unchecked
+runtime exception
+happens after compilation
+it is caught by JVM
+eg. NullPointerException, ArrayIndexOutOfBoundsException, ArithmeticException
+Extends RuntimeException.
+When the exception usually indicates programming errors (e.g., accessing null references, dividing by zero).
+
+
+extras:
+
+✅ Checked (Compile-time) Exception → Program won’t compile ❌( if not handled properly using try-catch or throws). Since it doesn’t compile, it also won’t run.
+
+✅ Unchecked (Runtime) Exception → Program compiles successfully ✅ but fails at runtime ❌ when the exception occurs.
+
+

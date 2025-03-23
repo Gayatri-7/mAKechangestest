@@ -1,0 +1,17 @@
+Stack                                                
+1)All methods, LOCAL variables, references to objects are store in stack
+2)Faster(LIFO)
+3)Garbage collector is not needed(memory is automatically freed when method execution finishes)
+4)Small 
+5)fixed in size
+
+Heap
+1)All the objects, INSTANCE variables, are stored 
+2)Slower
+3)GC is Automatically removes(obj1 = null; → No references left → GC removes the object.)
+4)Larger 
+5)dynamically allocated
+
+Java's Garbage collector automatically runs in the background and removes the objects that are no longer referenced(unreachable).
+
+**instance variable class ka hota hai and local variable method ke andar andar hota hai uska apna local hota hai.

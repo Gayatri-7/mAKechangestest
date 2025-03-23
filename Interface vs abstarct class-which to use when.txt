@@ -1,0 +1,7 @@
+interface
+1)conatins only abtract method                                                 ,abstract-contaoins both abstract adn normal method
+2)supports multiple inheritance
+3)by default all interface methods are public and abstract(so u cannot make them final,static,synchronised)
+4)by default interface variable are public static final(final variable needs declartion ke time hi initialization like int a=0;)
+5)interface doesn't allow constructor
+6)used when we know the requirement but do not know the Implementation            abs class is used when u know some implemnation and some u dont know
