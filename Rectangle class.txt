@@ -1,0 +1,38 @@
+class Rectangle{
+    int length;   //properties
+    int breadth;
+    
+    //beahvious
+    public int area(){
+        return length*breadth;
+    }
+    public int perimeter(){
+        return 2*(length+breadth);
+        
+    }
+    public boolean isSquare(){  //just writing--> return length==breadth 
+                                //will also work bcs == will give a true or false output
+        boolean isSquare=true;
+        if(length!=breadth){
+            isSquare=false;
+        }
+       return isSquare; 
+    }
+    
+}
+
+
+
+
+
+
+public class Main{
+    public static void main (String[] args) {
+        Rectangle r=new Rectangle();
+        r.length=2;
+        r.breadth=2;
+        System.out.println(r.area());
+        System.out.println(r.perimeter());
+        System.out.println(r.isSquare());
+    }
+}

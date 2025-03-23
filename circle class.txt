@@ -1,0 +1,33 @@
+class Circle{
+   public double radius;   //properties
+   //behaviours-
+   
+   public double area(){  //what it is asking for and the parameter should be same datatype
+       return Math.PI*radius*radius;
+   }
+   public double perimeter(){
+       return 2*Math.PI*radius;
+   }
+   public double circumference(){
+       return perimeter();
+   }
+}
+public class Main{
+    public static void main (String[] args) {
+      //we will have to create Object
+      Circle c1=new Circle();
+      Circle c2=new Circle();
+      
+      c1.radius=2;
+      c2.radius=3;
+      
+      System.out.println("area is "+c1.area());
+      System.out.println("perimeter is "+c1.perimeter());
+      System.out.println("circumference is "+c1.circumference());
+      
+      System.out.println("area is "+c2.area());
+      System.out.println("perimeter is "+c2.perimeter());
+      System.out.println("circumference is "+c2.circumference());
+      
+    }
+}

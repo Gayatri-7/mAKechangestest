@@ -1,0 +1,23 @@
+
+class Television{
+    //everything in world is divided into
+//     properties(variables)
+//     behaviours(methods)
+
+private int channel;
+private int volume;
+private int brightness;
+    public void changeChannel(){  //behaviours always uses properties(variables) 
+        
+    }
+    public void increaseVolume(){
+        
+    }
+    
+}
+public class Test
+{
+	public static void main(String[] args) {
+	 Television t=new Television();
+	}
+}
